@@ -28,7 +28,7 @@ if(isset($_POST['ok'])){
         $nama=$_POST['nama'];
         $data=$_POST['data'];
         $tanggal=date("h:i:s");
-        $buka=fopen("post/hasil.html",'a');
+        $buka=fopen("hasil.html",'a');
         fwrite($buka,"title: ${nama} <br> ");
         fwrite($buka,"dibuat : ${tanggal} <br> ");
         fwrite($buka," isi : ${data} <br> ");
